@@ -1,0 +1,39 @@
+
+=content
+ max-width: $content
+ margin: 0 auto
+
+=bgimg
+ background-repeat: no-repeat
+ background-position: center center
+ background-size: cover
+
+=title
+ color: white
+ font-family: "Open Sans"
+ font-size: 33px
+ font-weight: 900
+ text-transform: uppercase
+ letter-spacing: 1px
+ line-height: 33px
+ +respond-to(800px)
+ 	line-height: 32px
+
+$font: 'Open Sans'
+
+=text($color, $size)
+ color: $color
+ font-family: $font
+ font-size: $size
+
+=yellow
+ background-color: $yellow
+
+=cross
+	position: absolute
+	right: 15px
+	top: 7px
+	content: ''
+	height: 33px
+	width: 4px
+	background-color: black

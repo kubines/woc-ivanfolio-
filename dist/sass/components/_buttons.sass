@@ -1,0 +1,30 @@
+=button
+ width: 384px
+ height: 60px
+ background-color: rgb(255, 91, 91)
+ border: 0
+ border-radius: 3px
+ box-shadow: 0 6px 1px rgba(187, 30, 30, 0.9)
+ color: #fff
+ font-size: 21px
+ font-weight: 900
+ line-height: 34px
+ letter-spacing: 1px
+ text-transform: uppercase
+ transition: 0.2s
+ &:hover
+  background-color: rgb(255, 81, 81)
+  cursor: pointer
+ &::after
+  content: ''
+  position: absolute
+  display: block
+  width: 78px
+  height: 63px
+  right: -100px
+  top: -15px
+  background-image: url("../img/arrow.png")
+  cursor: default
+  &:hover
+   background: rgb(255, 91, 91)
+   background-size:

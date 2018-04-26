@@ -1,0 +1,68 @@
+.achieve
+	width: 100%
+	min-height: 449px
+	display: flex
+	flex-direction: column
+	align-items: center
+ 
+ &__title
+ 	+title
+ 	color: black
+ 	margin-top: 51px
+ 	margin-bottom: 20px
+ 	text-align: center
+ 	padding: 0 10px 0 10px
+ 	&_yellow
+ 		color: #e3981f
+ 		font-size: 50px
+ 
+ &__text
+ 	+yellow
+ 	color: rgb(255, 254, 254)
+ 	font-size: 20px
+ 	font-weight: 700
+ 	padding: 0 5px 0 5px
+
+ &__list
+ 	display: flex
+ 	max-width: 1200px
+ 	margin-top: 29px
+ 	margin-bottom: 30px
+ 	+respond-to(1050px)
+ 		flex-direction: column
+ 	&_flex
+ 		display: flex
+ 		+respond-to(590px)
+ 			flex-direction: column
+ 	&-item
+ 		width: 248px
+ 		height: 211px
+ 		background-color: whitesmoke
+ 		text-align: center
+ 		border: 0.59px solid rgb(222, 222, 222)
+ 		margin: 0 25px 0 25px
+ 		+respond-to(1180px)
+ 			margin: 0 7px 0 7px
+ 		+respond-to(1050px)
+ 			margin: 10px 25px 10px 25px
+ 		& p:nth-child(1)
+ 			color: rgb(227, 152, 31)
+ 			font-size: 45px
+ 			font-weight: 900
+ 			line-height: 25px
+ 			margin-top: 40px
+ 			padding-bottom: 25px
+ 			&:after
+ 				content: ""
+ 				display: block
+ 				position: relative
+ 				top: 25px
+ 				margin: 0 auto
+ 				width: 139px
+ 				border: 0.59px solid rgb(192, 248, 255)
+ 		& p:nth-child(2)
+ 			font-size: 19px
+ 			font-weight: 400
+ 			line-height: 25px
+ 			margin-top: 23px
+

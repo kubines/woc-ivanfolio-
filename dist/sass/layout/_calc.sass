@@ -1,0 +1,40 @@
+.calc
+	@extend .main
+	min-height: 646px
+	margin: 0 auto
+	+respond-to(900px)
+		flex-direction: column
+
+
+	&-slider
+		@extend .main-slider
+		margin-top: 159px
+		height: 296px
+		+respond-to(900px)
+			display: none
+		& i 
+			color: #282828;
+
+	&-content
+		@extend .main-content
+		&__title
+			@extend .main-content__title
+			color: #282828
+			+respond-to(900px)
+				text-align: center
+		&__text
+			@extend .main-content__text
+			+respond-to(900px)
+				text-align: center
+		&__list
+			@extend .main-list
+			color: #282828
+			& li
+				@extend .main-list__item
+		&__icon-text
+			@extend .main-content__icon-text
+			color: #282828
+			&:before
+				background-image: url("../img/telblack.png")
+		&__button
+			@extend .main-content__button

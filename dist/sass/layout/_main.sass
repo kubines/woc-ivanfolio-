@@ -1,0 +1,99 @@
+.main_wrap
+ width: 100%
+ background-image: url("../img/mainbg.png")
+ +bgimg
+
+.main
+  +content
+  min-height: 580px
+  display: flex
+  justify-content: space-around
+  overflow: hidden
+  +respond-to(900px)
+    flex-direction: column
+  
+
+.main-slider
+  height: 296px
+  margin: 10% 20px 0 20px
+  +respond-to(900px)
+    margin: 5% 20px 0 20px
+
+.main-content
+ max-width: 701px
+ position: relative
+ top: 40px
+ margin: 0 30px 0 0
+ +respond-to(900px)
+  margin: 0 auto
+  padding: 0 15px 0 15px
+
+ &__title
+  +title
+  max-width: 100%
+  margin-bottom: 20px
+  line-height: 41px
+
+ &__text
+  +text(#fff, 20px)
+  max-width: 100%
+  display: inline
+  font-weight: 700
+  padding: 0 7px 0 7px
+  line-height: 30px
+  +yellow
+
+ &__icon-text
+  +text(#fff, 25px)
+  position: relative
+  left: 76px
+  padding-right: 76px
+  line-height: 37px
+  font-weight: 700
+  margin-top: 8px
+  &:before
+   content: ''
+   display: block
+   position: absolute
+   width: 56px
+   height: 58px
+   top: 10%
+   left: -76px
+   background-image: url("../img/tel.png")
+   +bgimg
+
+ &__button
+  +button
+  position: relative
+  margin-top: 27px
+  margin-bottom: 100px
+  +respond-to(900px)
+    left: calc(50% - 192px)
+  &::after
+    +respond-to(1000px)
+      display: none
+
+
+.main-list
+ +text (#fff, 25px)
+ font-weight: 700
+ margin-top: 10px
+ &__item
+  font-weight: 100
+  font-size: 20px
+  line-height: 32px
+  list-style-position: inside
+  list-style-image: url('../img/list.png')
+
+
+
+
+
+
+
+
+
+
+
+
+

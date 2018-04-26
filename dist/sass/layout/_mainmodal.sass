@@ -1,0 +1,40 @@
+.main-modal
+	position: fixed
+	top: 15%
+	left: calc(50% - 315px)
+	height: 439px
+	width: 630px
+	background-color: white
+	border-radius: 20px
+	z-index: 200
+	animation: show 0.2s
+	@keyframes show
+	  0%
+	    opacity: 0
+	    top: 40%
+	  50%
+	    opacity: 0.3
+	    top: 30%
+	  100%
+	    opacity: 1
+	    top: 15%
+
+	&__band
+		margin: 0 auto
+		margin-top: 40px
+		margin-bottom: 23px
+		background-image: url("../img/band.png")
+		background-position: 0 -40px
+		width: 570px
+		height: 40px
+		text-align: center
+		line-height: 40px
+		color: #fff
+		font-size: 20px
+	&__text
+		margin: 0 auto
+		max-width: 565px
+		text-align: center
+		font-size: 13px
+
+
